@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        background: #eff4fd;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #eff4fd;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+      }
+      .nn {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+      }
+      .nn li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 60px;
+      }
+      .content {
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .experience {
+        max-width: 600px;
+        background-color: #fff;
+        padding: 20px;
+        /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+      }
+      .experience p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nn">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SKILLS</a></li>
+        <li><a href="#">MY WORKS</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="content">
+        <img src="pic.png" alt="My Picture" class="profile-pic" />
+        <div class="experience">
+          <h2>Computer Science Experience</h2>
+          <p>
+            I am a passionate computer scientist with experience in various
+            domains of technology. My journey started with learning programming
+            languages such as Python and JavaScript, and I have since developed
+            expertise in web development, data analysis, and machine learning.
+          </p>
+          <p>
+            Throughout my career, I have worked on multiple projects, ranging
+            from developing web applications to implementing machine learning
+            models for data prediction. I am always eager to learn new
+            technologies and apply them to solve real-world problems.
+          </p>
+          <p>
+            My skills include full-stack development, database management, and
+            cloud computing. I have a strong foundation in algorithms and data
+            structures, which helps me to write efficient and optimized code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

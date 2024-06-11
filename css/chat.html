@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        display: flex;
+        width: 90%;
+        height: 80%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+      }
+      .form-section {
+        flex: 1;
+        background-color: white;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .form-section h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+      .form-section label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        display: block;
+        text-align: left;
+      }
+      .form-section input[type="text"],
+      .form-section input[type="email"],
+      .form-section input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .form-section input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      .form-section button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .form-section .social-login {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .form-section .social-login button {
+        width: 48%;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .form-section .social-login button img {
+        margin-right: 10px;
+      }
+      .form-section .signin-link {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+      }
+      .form-section .signin-link a {
+        color: #4caf50;
+        text-decoration: none;
+      }
+      .image-section {
+        flex: 1;
+        background-image: url("bgpic.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 0 15px 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-section">
+        <h1>Get Started Now</h1>
+        <div class="nam">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="emai">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="paas">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+          "
+        >
+          <input type="checkbox" id="terms" />
+          <label for="terms">I agree to the terms & policies</label>
+        </div>
+        <div class="butt">
+          <button>Sign Up</button>
+        </div>
+        <div class="social-login">
+          <button>
+            <img src="google-icon.png" alt="Google" /> Sign in with Google
+          </button>
+          <button>
+            <img src="apple-icon.png" alt="Apple" /> Sign in with Apple
+          </button>
+        </div>
+        <div class="signin-link">Have an account? <a href="#">Sign in</a></div>
+      </div>
+      <div class="image-section"></div>
+    </div>
+  </body>
+</html>

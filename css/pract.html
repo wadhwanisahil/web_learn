@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+      }
+      img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 80vh;
+        border-radius: 20px;
+      }
+      over {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 20px;
+        margin-left: 20px;
+        border: 20px;
+        display: block;
+        font-size: medium;
+      }
+      h4 {
+        margin-bottom: 5px;
+      }
+      input {
+        margin-top: 0;
+        size: 30px;
+        font-size: 18pt;
+        height: 20px;
+        width: 400px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      button {
+        width: 200px;
+        height: 25px;
+      }
+      .cheak {
+        width: 15px;
+        height: 10px;
+      }
+      .cheak {
+        display: flex;
+        margin-top: 10px;
+      }
+      .cheak input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+      }
+      button {
+        width: 400px;
+        height: 25px;
+        font-size: 18px;
+        color: white;
+        background-color: #040504;
+      }
+      .bod {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .auth-container {
+        text-align: center;
+      }
+
+      .auth-buttons {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 20px;
+      }
+
+      .auth-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+      }
+
+      .auth-button img {
+        width: 5px;
+        height: 5px;
+        margin-right: 10px;
+      }
+
+      .auth-button.google {
+        border-color: #000000;
+      }
+
+      .auth-button.apple {
+        border-color: #000000;
+      }
+
+      .signin-text {
+        font-size: 14px;
+        display: flex;
+        justify-content: left;
+      }
+
+      .signin-text a {
+        color: #4285f4;
+        text-decoration: none;
+      }
+      input::placeholder {
+        font-size: 12px; /* Adjust the font size as needed */
+        color: #999; /* Optional: Change the color of the placeholder text */
+      }
+      @media (max-width: 840px) {
+        .imge {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <body>
+    <img src="bgpic.jpg" alt="pic" class="imge" />
+    <div class="over">
+      <h1>Get Started Now</h1>
+      <div class="nam">
+        <h4>Name</h4>
+        <input type="text" placeholder="Enter your name" />
+      </div>
+      <div class="emai">
+        <h4>Email Address</h4>
+        <input type="email" placeholder="Enter Email" />
+      </div>
+      <div class="paas">
+        <h4>Passward</h4>
+        <input type="password" placeholder="Enter passward" />
+      </div>
+      <section class="cheak">
+        <input type="checkbox" />
+        <label for="checkbox">I agree to the terms and conditions</label>
+      </section>
+    </div>
+    <div class="butt">
+      <br />
+      <br />
+      <button>SignUp</button>
+      <br />
+      <br />
+    </div>
+    <div class="bod">
+      <div class="auth-container">
+        <div class="auth-buttons">
+          <button class="auth-button google">
+            <i class="fab fa-google" style="font-size: 24px"></i>
+            Sign in with Google
+          </button>
+          <button class="auth-button apple">
+            <i class="fab fa-apple" style="font-size: 24px"></i>
+            Sign in with Apple
+          </button>
+        </div>
+        <p class="signin-text">Have an account? <a href="#">Sign In</a></p>
+      </div>
+    </div>
+  </body>
+</html>
